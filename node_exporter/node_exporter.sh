@@ -31,6 +31,6 @@ else
 fi
 #带一个参数指定备注
 ip=`ip address show eth0 | head -n4 |grep inet | awk '{print$2}'`
-curl "http://******/node?ip=${ip}&des=${hostname}"
+curl "http://*****/node?ip=${ip}&des=${hostname}"
 #向api发送信息报告
 echo "node_exporter部署完成"
